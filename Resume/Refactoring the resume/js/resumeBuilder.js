@@ -111,7 +111,7 @@ var bio = {
 	"skills" : ["HTML5", "CSS3", "Javascript ES5/ES6", "ReactJS", "NodeJS"],
 	"bioPic" : "images/my.jpg",
 	"display" : function(){
-		var formatemail, formatmobile, formatgithub, formatTwitter, formatBlog, formatlocation, formatbiopic, formatmsg, formattedName, formattedRole;
+		var formatemail, formatmobile, formatgithub, formatlocation, formatbiopic, formatmsg, formattedName, formattedRole;
 		formattedName = HTMLheaderName.replace("%data%",bio.name);
         formattedRole = HTMLheaderRole.replace("%data%",bio.role);
         $('#header').prepend(formattedRole);
@@ -126,9 +126,7 @@ var bio = {
 	    formatemail = HTMLemail.replace("%data%",bio.contacts.email);
         formatmobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
 	    formatgithub = HTMLgithub.replace("%data%",bio.contacts.github);
-		formatTwitter = HTMLtwitter.replace("%data%",bio.contacts.twitter);
 	    formatlinkedin = HTMLlinkedin.replace("%data%",bio.contacts.linkedin);
-		formatBlog = HTMLblog.replace("%data%",bio.contacts.blog);
 	    formatlocation = HTMLlocation.replace("%data%",bio.contacts.location);
 	    formatbiopic = HTMLbioPic.replace("%data%",bio.bioPic);
 	    formatmsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMessage);
@@ -136,8 +134,6 @@ var bio = {
 	    $('#topContacts,#footerContacts').append(formatemail);
 	    $('#topContacts,#footerContacts').append(formatgithub);
 	    $('#topContacts,#footerContacts').append(formatlocation);
-		$('#topContacts,#footerContacts').append(formatTwitter);
-		$('#topContacts,#footerContacts').append(formatBlog);
 	    $('#topcontacts').append(formatmsg);
 	    $('#header').append(formatbiopic);
 	    $('#header').append(formatmsg);
