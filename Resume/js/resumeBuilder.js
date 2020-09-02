@@ -106,7 +106,9 @@ var bio = {
 		"email"  : "charu.tiwari04@gmail.com",
 		"github" : "charutiwari04",
 		"linkedin" : "https://www.linkedin.com/in/charutiwari04/",
-		"location": "Sunnyvale CA"
+		"location": "Sunnyvale CA",
+		"twitter": "@CharuTiwari04",
+		"blog": "Charu'sBlog",
 	},
 	"skills" : ["HTML5", "CSS3", "Javascript ES5/ES6", "ReactJS", "NodeJS"],
 	"bioPic" : "images/my.jpg",
